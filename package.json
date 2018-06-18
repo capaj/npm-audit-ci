@@ -1,34 +1,37 @@
 {
-  "name": "npm-audit-ci",
-  "version": "1.0.2",
-  "description": "Commandline utility which exit the process with code 1, for the given criteria of vulnerabilities",
-  "main": "index.js",
-  "bin": "bin/npm-audit-ci",
-  "files": [
-    "index.js",
-    "bin/"
-  ],
-  "scripts": {
-    "test": "ava",
-    "audit-ci": "./bin/npm-audit-ci -c"
-  },
-  "keywords": [
-    "audit",
-    "ci",
-    "npm",
-    "continuous integration"
-  ],
-  "author": "Revath S Kumar <rsk@revathskumar.com> (http://blog.revathskumar.com/)",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/revathskumar/npm-audit-ci.git"
-  },
-  "devDependencies": {
-    "ava": "^0.25.0"
-  },
-  "dependencies": {
-    "execa": "^0.10.0",
-    "yargs": "^11.0.0"
-  }
+    "name": "@capaj/npm-audit-ci",
+    "version": "1.0.2",
+    "description": "Commandline utility which exit the process with code 1, for the given criteria of vulnerabilities",
+    "main": "index.js",
+    "bin": "bin/npm-audit-ci",
+    "files": [
+        "index.js",
+        "bin/"
+    ],
+    "scripts": {
+        "test": "ava",
+        "audit-ci": "./bin/npm-audit-ci -c"
+    },
+    "keywords": [
+        "audit",
+        "ci",
+        "npm",
+        "continuous integration"
+    ],
+    "authors": [
+        "Revath S Kumar <rsk@revathskumar.com> (http://blog.revathskumar.com/)",
+        "Jiri Spac <capajj@gmail.com> (https://github.com/capaj)"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/revathskumar/npm-audit-ci.git"
+    },
+    "devDependencies": {
+        "ava": "^0.25.0"
+    },
+    "dependencies": {
+        "execa": "^0.10.0",
+        "yargs": "^11.0.0"
+    }
 }
