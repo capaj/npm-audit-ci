@@ -1,6 +1,7 @@
 'use strict'
 const process = require('process')
 const execa = require('execa')
+const isCI = require('is-ci')
 
 var argv = require('yargs')
   .options({
@@ -45,8 +46,12 @@ const run = () => {
       const res = JSON.parse(result.stdout)
 
       if (res.error) {
-        console.error(res.error)
-        return process.exit(1)
+        if (isCI) {
+          console.error(res.error)
+          return process.exit(1)
+        } else {
+          return process.exit(0)
+        }
       }
       const {
         info,

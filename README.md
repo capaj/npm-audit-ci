@@ -1,19 +1,17 @@
-npm audit ci  [![Build Status](https://travis-ci.org/revathskumar/npm-audit-ci.svg?branch=master)](https://travis-ci.org/revathskumar/npm-audit-ci)
-======================
+# npm audit ci [![Build Status](https://travis-ci.org/revathskumar/npm-audit-ci.svg?branch=master)](https://travis-ci.org/revathskumar/npm-audit-ci)
 
     Commandline utility which exit the process with code 1, for the given criteria of vulnerabilities
 
 Useful to make CI build fail when vulnerabilities are found or use to send alert using another tool.
 
-
 ### Usage
 
 ```
-npm install -g npm-audit-ci
+npm install -g @capaj/npm-audit-ci
 ```
 
 ```
-› npm-audit-ci --help                    
+› npm-audit-ci --help
 Options:
   --version        Show version number                                 [boolean]
   -l, --low        Exit even for low vulnerabilities  [boolean] [default: false]
@@ -26,7 +24,6 @@ Options:
   --help           Show help
 ```
 
-License
--------
-Please see [License](https://github.com/revathskumar/npm-audit-ci/blob/master/License)
+## License
 
+Please see [License](https://github.com/capaj/npm-audit-ci/blob/master/License)
