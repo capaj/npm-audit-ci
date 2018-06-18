@@ -44,6 +44,10 @@ const run = () => {
     (result) => {
       const res = JSON.parse(result.stdout)
 
+      if (res.error) {
+        console.error(res.error)
+        return process.exit(1)
+      }
       const {
         info,
         low,
