@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-var ci = require('../');
-ci.run();
+var run = require('../');
+run();
