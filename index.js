@@ -42,9 +42,7 @@ const run = () => {
   execa.shell('npm audit --json').then(
     (result) => {},
     (result) => {
-      // console.log(result.stdout)
       const res = JSON.parse(result.stdout)
-      console.log('argv: ', argv)
 
       const {
         info,
